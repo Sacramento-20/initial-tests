@@ -1,0 +1,26 @@
+Sobre o conjunto de dados
+Contexto
+Este conjunto de dados complementa o projeto https://github.com/vmalyi/run-or-walk , que visa detectar se a pessoa está correndo ou caminhando com base na rede neural profunda e nos dados do sensor coletados do dispositivo iOS.
+
+Este conjunto de dados foi acumulado com a ajuda do aplicativo iOS "Data Collection" desenvolvido especialmente para esta finalidade: https://github.com/vmalyi/run-or-walk/tree/master/ios_app_data_collection .
+
+Observe que este aplicativo ainda não está disponível na AppStore.
+
+Contente
+Atualmente, o conjunto de dados contém um único arquivo que representa 88.588 amostras de dados do sensor coletadas do acelerômetro e giroscópio do iPhone 5c em intervalo de 10 segundos e frequência de ~ 5,4/segundo. Esses dados são representados pelas seguintes colunas (cada coluna contém dados do sensor para um dos eixos do sensor):
+
+aceleração_x
+aceleração_y
+aceleração_z
+giroscópio_x
+gyro_y
+giroscópio_z
+Existe um tipo de atividade representado pela coluna "atividade" que atua como rótulo e reflete as seguintes atividades:
+
+"0": andando
+"1": em execução
+Além disso, o conjunto de dados contém a coluna "pulso" que representa o pulso onde o dispositivo foi colocado para coletar uma amostra:
+
+"0": pulso esquerdo
+"1": pulso direito
+Além disso, o conjunto de dados contém as colunas "data", "hora" e "nome de usuário" que fornecem informações sobre a data, hora e usuário exatos que coletaram essas medições.

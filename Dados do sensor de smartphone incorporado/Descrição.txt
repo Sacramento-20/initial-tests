@@ -1,0 +1,48 @@
+Sobre o conjunto de dados
+Contexto
+Este conjunto de dados inclui dados de séries temporais gerados por sensores de smartphones embutidos (acelerômetro, giroscópio, magnetômetro, sensor de bateria, GPS, etc.). Esses dados são coletados com um aplicativo Android "Sensor Data Collector", desenvolvido para acumular dados de sensores de smartphones.
+
+Inspiração
+Ao analisar este conjunto de dados, pode-se encontrar facilmente diferentes tipos de correlações entre dados de sensores móveis e emoções humanas, padrões de sono, padrões de movimento, etc. Ele também pode ser usado em diferentes domínios, como sistemas de recomendação, atividades da vida diária e muito mais.
+
+Contente
+Versão 2 (UserInfo.csv, Sensors.csv)
+Para cada participante, o estudo começou coletando seus 14 dias de dados do sensor do smartphone usando um aplicativo Android "Coletor de dados do sensor" e obteve 21.690 amostras gravadas de dados autônomos do sensor do smartphone de 145 usuários .
+
+UserInfo.csv contém informações que coletamos diretamente dos usuários, como gênero e faixa etária. Preocupações com a privacidade foram levadas em consideração significativamente em nosso estudo de pesquisa. Com foco na proteção das informações pessoais dos participantes, anonimizamos totalmente a identidade de cada participante com um ID de usuário com hash aleatório.
+
+Sensors.csv contém dados de sensores móveis coletados do acelerômetro, gravidade, giroscópio, magnetômetro, orientação e sensores GPS. Os dados do acelerômetro, gravidade, giroscópio e magnetômetro são registrados com seus valores triaxiais. O GPS abrange os incrementos do dispositivo em latitude, longitude e altitude.
+
+Versão 1(SENSORDATA.csv)
+Os dados são coletados por meio do mesmo aplicativo "coletor de dados do sensor" por 14 dias como a versão 2. Este conjunto de dados contém 9.516 registros de dados do sensor de smartphone incorporado coletados do acelerômetro, gravidade, giroscópio, magnetômetro, sensor de bateria, sensor de luz, orientação e sensores de GPS.
+
+Reconhecimentos
+Se você usar este conjunto de dados, cite o seguinte artigo:
+
+{
+Autor= {Moontaha Nishat Chowdhury, HM Zabir Haque, Kazi Taqi Tahmid, Fatema-Tuz-Zohora Salma, Nafisa Ahmed}
+Título= {Uma nova abordagem para recomendação de produtos usando dados de sensores de smartphones}
+Tipo de publicação= {Artigo de jornal}
+País= { Alemanha}
+Ano de publicação= {2022}
+Nome do periódico= {International Journal of Interactive Mobile Technologies}
+ISSN= {1865-7923}
+Volume= {16}
+Editora= {Kassel University Press GmbH}
+DOI={ https://doi.org /10.3991/ijim.v16i16.31617 }
+}
+
+ou,
+{
+Autor= {Kazi Taqi Tahmid, Khandaker Rezwan Ahmed, Moontaha Nishat Chowdhury, Koushik Mallik, Umme Habiba e HM Zabir Haque}
+Título= {Um aplicativo de crowdsourcing integrado para aquisição de dados de sensor de smartphone incorporado e análise de mobilidade}
+Tipo de publicação= { Artigo do periódico}
+País= {Estados Unidos}
+Ano da publicação= {2022}
+Nome do periódico= {Journal of Advances in Information Technology}
+ISSN= {1798-2340}
+Volume= {13}
+Número= {5}
+Editora= {Engineering and Technology Publicação}
+DOI={ https://doi.org/10.12720/jait.13.5.503-511 }
+}

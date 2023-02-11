@@ -1,0 +1,36 @@
+Conjunto de dados 4G LTE
+Papel: https://cora.ucc.ie/handle/10468/6400
+
+Descrição do conjunto de dados
+O conjunto de dados de rastreamento 4G contém 135 rastreamentos, com uma duração média de quinze minutos por rastreamento, com taxa de transferência visível variando de 0 a 173 Mbit/s em uma granularidade de uma amostra por segundo.
+
+Realize testes de medição 4G (salvo indicação em contrário) em seis padrões de mobilidade diferentes:
+
+Estático: Ensaios estáticos (interior)
+Pedestre: Testes de caminhada pela cidade de Cork, Irlanda
+Ônibus: julgamentos incluem casos urbanos e suburbanos
+Carro: os testes incluem cenários urbanos e suburbanos
+Trem: Viajando entre Cork - Dublin (240km) e Cork - Farranfore (75km). Combinação de 3G e 4G
+Nomes e descrição das colunas
+Timestamp: timestamp da amostra
+Longitude e Latitude: Coordenadas GPS do dispositivo móvel
+Velocidade: velocidade em km/h do dispositivo móvel
+Operatorname: nome da operadora de celular (anônimo)
+CellId: célula de serviço para dispositivo móvel
+NetworkMode: padrão de comunicação móvel (2G/3G/4G)
+RSRQ: valor para RSRQ. RSRQ Representa uma relação entre RSRP e Indicador de Intensidade do Sinal Recebido (RSSI). A intensidade do sinal (qualidade do sinal) é medida em todos os elementos de recursos (RE), incluindo a interferência de todas as fontes (dB).
+RSRP: valor para RSRP. RSRP Representa uma potência média sobre símbolos de referência específicos da célula transportados dentro de RE distintos. O RSRP é usado para medir a intensidade/cobertura do sinal da célula e, portanto, a seleção da célula (dBm).
+RSSI: valor para RSSI. RSSI representa uma potência recebida (banda larga) incluindo uma célula servidora e interferência e ruído de outras fontes. RSRQ, RSRP e RSSI são usados ​​para medir a força/cobertura da célula e, portanto, a seleção da célula (transferência) (dBm).
+SNR: valor da relação sinal/ruído (dB).
+CQI: valor para CQI de um dispositivo móvel. CQI é um feedback fornecido pelo UE para eNodeB. Indica a taxa de dados que pode ser transmitida por um canal (maior MCS com probabilidade de BLER menor que 10%), em função do SINR e das características do receptor do UE. Com base na predição do UE do canal, o eNodeB seleciona um esquema de modulação e taxa de codificação apropriados.
+DL_bitrate: taxa de download medida no dispositivo (camada de aplicação) (kbit/s)
+UL_bitrate: taxa de uplink medida no dispositivo (
+camada de aplicação) (kbit/s)
+Estado: estado do processo de download. Tem dois valores,
+I (ocioso, sem download) ou D (download)
+NRxRSRQ & NRxRSRP: Valores RSRQ e RSRP para a célula vizinha.
+Cell_Longitude & Cell_Latitude: Coordenadas GPS de servir
+eNodeB. Usamos o OpenCellid4 , o maior banco de dados aberto da comunidade que fornece coordenadas GPS de torres de celular.
+Distância: distância entre a célula servidora e o dispositivo móvel em metros.
+Referência
+D. Raca, JJ Quinlan, AH Zahran, CJ Sreenan. "Beyond Throughput: a 4G LTE Dataset with Channel and Context Metrics" In Proceedings of ACM Multimedia Systems Conference (MMSys 2018), Amsterdã, Holanda, 12 a 15 de junho de 2018

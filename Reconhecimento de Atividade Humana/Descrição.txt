@@ -1,0 +1,56 @@
+Sobre o conjunto de dados
+
+
+
+O conjunto de dados, adquirido do WISDM Lab, consiste em dados coletados de 36 usuários diferentes realizando seis tipos de atividades humanas (subir e descer escadas, sentar, caminhar, correr e ficar em pé) por períodos específicos de tempo.
+
+Esses dados foram adquiridos de acelerômetros, que são capazes de detectar a orientação do dispositivo medindo a aceleração ao longo das três diferentes dimensões. Eles foram coletados usando uma taxa de amostragem de 20 Hz (1 amostra a cada 50 milissegundos), o que equivale a 20 amostras por segundo.
+
+Esses dados de séries temporais podem ser usados ​​para executar várias técnicas, como reconhecimento de atividade humana.
+
+Campos:
+user : o usuário que adquiriu os dados (inteiro de 1 a 36).
+
+activity : a atividade que o usuário estava realizando. Poderia ser:
+
+1. caminhando
+2. Corrida
+3. Sentado
+4. Em pé
+5. No andar de cima
+6. Lá embaixo.
+timestamp : geralmente o tempo de atividade do telefone em nanossegundos.
+
+x-axis : A aceleração na direção x medida pelo acelerômetro do telefone Android.
+Valores de ponto flutuante entre -20 e 20. Um valor de 10 = 1g = 9,81 m/s^2 e 0 = sem aceleração.
+A aceleração registrada inclui a aceleração gravitacional em direção ao centro da Terra, de modo que, quando o telefone estiver em repouso sobre uma superfície plana, o eixo vertical registrará +-10.
+
+eixo y : o mesmo que o eixo x, mas ao longo do eixo y.
+
+eixo z : o mesmo que o eixo x, mas ao longo do eixo z.
+
+Lembre-se de votar se achou o conjunto de dados útil :) .
+
+Inspiração
+Os dados podem ser usados ​​para realizar a previsão da atividade humana. Eu sugiro fortemente que você dê uma olhada neste artigo se quiser ter uma referência para realizar esta tarefa e considerando que o conjunto de dados fornecido já foi limpo.
+Além disso, você pode tentar executar outras técnicas de seleção e engenharia de recursos e usar modelos mais complexos para previsão.
+
+Reconhecimento
+Os dados foram obtidos no site do conjunto de dados WISDM e foram limpos, excluindo valores ausentes, substituindo strings inconsistentes e convertendo o conjunto de dados em csv.
+
+Jeffrey W. Lockhart, Tony Pulickal e Gary M. Weiss (2012).
+"Applications of Mobile Activity Recognition,"
+Proceedings of the ACM UbiComp International Workshop
+on Situation, Activity, and Goal Awareness, Pittsburgh,
+PA.
+
+Gary M. Weiss e Jeffrey W. Lockhart (2012). "O Impacto da
+Personalização no Reconhecimento de Atividade Baseado em Smartphone,"
+Atas do Workshop AAAI-12 sobre
+Representação do Contexto da Atividade: Técnicas e Linguagens, Toronto, CA.
+
+Jennifer R. Kwapisz, Gary M. Weiss e Samuel A. Moore (2010).
+"Reconhecimento de atividades usando acelerômetros de telefones celulares,"
+Anais do Quarto Workshop Internacional sobre
+Descoberta de Conhecimento a partir de Dados de Sensores (em KDD-10), Washington
+DC.
